@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+    //隐藏/显示diy
+    function myFunction(){
+        document.getElementById("login-input-name").style.display="none";
+        document.getElementById("login-input-password").style.display="none";
+        document.getElementById("login-blocks login-links1").style.display="none"
+}
+
+    </script>
+    <style>
+        #login-top{
+            height: 100px;
+            width: 100%;
+            border:1px solid red;
+        }
+        #login-box{
+            height:305px;
+            width:305px;
+            border:1px solid #ccc;
+            margin:auto;
+        }
+        #login-box1{
+            height:255px;
+            width:255px;
+            border:1px solid #ccc;
+            margin:25px;
+        }
+        #login-box1-1{
+            height:25px;
+            width:255px;
+            border:1px solid #ccc;
+            text-align: left;
+            margin-bottom: 20px;
+            margin-top: 25px;
+        }
+        #login-box1-2{
+            height:200px;
+            width:255px;
+            border:1px solid #ccc;
+            text-align: left;
+            margin-top: 5px;
+        }
+        #login-input-name{
+            border: 1px solid #ccc;
+            height: 39px;
+            width: 210px;
+            font-size: 14px;
+
+
+        }
+        #login-input-password{
+            border: 1px solid #ccc;
+            height: 39px;
+            width: 210px;
+            font-size: 14px;
+            margin-top: 15px;
+
+
+        }
+        #login-name-img{
+            border: 1px solid #ccc;
+            height: 37px;
+            width: 37px;
+            float: left;
+
+            background-color: #ccc;
+        }
+        #login-password-img{
+            border: 1px solid #ccc;
+            height: 37px;
+            width: 37px;
+            float: left;
+
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div id="login-top">
+
+</div>
+<div id="login-box">
+    <div id="login-box1">
+        <div id="login-box1-1">
+            <a href="javascript:void(0);" target="_self" id="password-login-tab-item" style="font-weight:bold;color:black;text-decoration:none;" onclick="myFunction();">密码登录</a>
+            <a href="javascript:void(0);" target="_self" id="sms-login-tab-item" style="font-weight:bold;color:black;text-decoration:none;">短信登录</a>
+        </div>
+        <div id="login-box1-2">
+            <div id="login-input-name">
+                <div id="login-name-img">
+                     <img src="../img/login-name.png" style="height:37px;width:37px;">
+                </div>
+                <div>
+
+                    <input name="fm-login-name" type="text" class="fm-text" id="fm-login-name" tabindex="1" style="height:33px;" aria-label="会员名/邮箱/手机号" placeholder="会员名/邮箱/手机号" autocapitalize="off" autofocus="autofocus">
+                </div>
+            </div>
+
+            <div id="login-input-password">
+                <div id="login-password-img">
+                      <img src="../img/login-password.png" style="height:37px;width:37px;">
+                </div>
+                <input name="fm-login-name" type="text" class="fm-text" id="fm-login-password" tabindex="1" style="height:33px" aria-label="请输入登录密码" placeholder="请输入登录密码" autocapitalize="off" autofocus="autofocus">
+            </div>
+
+            <div id="login-input-name">
+                <div id="login-name-img">
+                     <img src="../img/login-name.png" style="height:37px;width:37px;">
+                </div>
+                <div>
+
+                    <input name="fm-login-name" type="text" class="fm-text" id="fm-login-name" tabindex="1" style="height:33px;" aria-label="会员名/邮箱/手机号" placeholder="会员名/邮箱/手机号" autocapitalize="off" autofocus="autofocus">
+                </div>
+            </div>
+
+            <div id="login-input-password">
+                <div id="login-password-img">
+                      <img src="../img/login-password.png" style="height:37px;width:37px;">
+                </div>
+                <input name="fm-login-name" type="text" class="fm-text" id="fm-login-password" tabindex="1" style="height:33px" aria-label="请输入登录密码" placeholder="请输入登录密码" autocapitalize="off" autofocus="autofocus">
+            </div>
+
+            <div id="login-button">
+                <button type="submit" tabindex="3" class="fm-button fm-submit password-login" style="width:255px;height:40px;margin-top: 15px;background-color: #f40;color:white">登录</button>
+            </div>
+            <div class="login-blocks login-links">
+            <a href="密码找回页" target="_blank" class="forgot-password-a-link" style="font-size:8px;color:black;text-decoration:none;">忘记密码</a>
+            <a href="注册页" target="_blank" class="register-a-link" style="font-size:8px;color:black;text-decoration:none;">&nbsp&nbsp&nbsp免费注册</a></div>
+        </div>
+        <div id="login-blocks login-links1">
+            <a href="注册页" target="_blank" class="register-a-link" style="font-size:8px;color:black;text-decoration:none;">免费注册</a></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
