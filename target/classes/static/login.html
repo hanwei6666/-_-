@@ -6,9 +6,13 @@
     <script type="text/javascript">
     //隐藏/显示diy
     function myFunction(){
+        // if(document.getElementById("login-input-phone").style.display="none" && document.getElementById("login-input-verification").style.display="none";){
+        //     document.getElementById("login-input-phone").style.display="block"
+        //     document.getElementById("login-input-verification").style.display="block"
+        // }
         document.getElementById("login-input-name").style.display="none";
         document.getElementById("login-input-password").style.display="none";
-        document.getElementById("login-blocks login-links1").style.display="none"
+        document.getElementById("login-blocks login-links").style.display="none"
 }
 
     </script>
@@ -60,6 +64,23 @@
             font-size: 14px;
             margin-top: 15px;
 
+        }
+        #login-input-phone{
+            border: 1px solid #ccc;
+            height: 39px;
+            width: 210px;
+            font-size: 14px;
+            display: none;
+
+
+        }
+        #login-input-verification{
+            border: 1px solid #ccc;
+            height: 39px;
+            width: 210px;
+            font-size: 14px;
+            margin-top: 15px;
+            display: none;
 
         }
         #login-name-img{
@@ -87,8 +108,8 @@
 <div id="login-box">
     <div id="login-box1">
         <div id="login-box1-1">
-            <a href="javascript:void(0);" target="_self" id="password-login-tab-item" style="font-weight:bold;color:black;text-decoration:none;" onclick="myFunction();">密码登录</a>
-            <a href="javascript:void(0);" target="_self" id="sms-login-tab-item" style="font-weight:bold;color:black;text-decoration:none;">短信登录</a>
+            <a href="javascript:void(0);" target="_self" id="password-login-tab-item" style="font-weight:bold;color:black;text-decoration:none;">密码登录</a>
+            <a href="javascript:void(0);" target="_self" id="sms-login-tab-item" style="font-weight:bold;color:black;text-decoration:none;"onclick="myFunction();">短信登录</a>
         </div>
         <div id="login-box1-2">
             <div id="login-input-name">
@@ -97,7 +118,7 @@
                 </div>
                 <div>
 
-                    <input name="fm-login-name" type="text" class="fm-text" id="fm-login-name" tabindex="1" style="height:33px;" aria-label="会员名/邮箱/手机号" placeholder="会员名/邮箱/手机号" autocapitalize="off" autofocus="autofocus">
+                    <input name="fm-login-name" type="text" class="fm-text" id="fm-login-name" tabindex="1" style="height:33px;" aria-label="会员名/邮箱" placeholder="会员名/邮箱" autocapitalize="off" autofocus="autofocus">
                 </div>
             </div>
 
@@ -108,21 +129,21 @@
                 <input name="fm-login-name" type="text" class="fm-text" id="fm-login-password" tabindex="1" style="height:33px" aria-label="请输入登录密码" placeholder="请输入登录密码" autocapitalize="off" autofocus="autofocus">
             </div>
 
-            <div id="login-input-name">
+            <div id="login-input-phone">
                 <div id="login-name-img">
                      <img src="../img/login-name.png" style="height:37px;width:37px;">
                 </div>
                 <div>
 
-                    <input name="fm-login-name" type="text" class="fm-text" id="fm-login-name" tabindex="1" style="height:33px;" aria-label="会员名/邮箱/手机号" placeholder="会员名/邮箱/手机号" autocapitalize="off" autofocus="autofocus">
+                    <input name="fm-login-name" type="text" class="fm-text" id="fm-login-name" tabindex="1" style="height:33px;" aria-label="手机号" placeholder="手机号" autocapitalize="off" autofocus="autofocus">
                 </div>
             </div>
 
-            <div id="login-input-password">
+            <div id="login-input-verification">
                 <div id="login-password-img">
                       <img src="../img/login-password.png" style="height:37px;width:37px;">
                 </div>
-                <input name="fm-login-name" type="text" class="fm-text" id="fm-login-password" tabindex="1" style="height:33px" aria-label="请输入登录密码" placeholder="请输入登录密码" autocapitalize="off" autofocus="autofocus">
+                <input name="fm-login-name" type="text" class="fm-text" id="fm-login-password" tabindex="1" style="height:33px" aria-label="请输入验证码" placeholder="请输入验证码" autocapitalize="off" autofocus="autofocus">
             </div>
 
             <div id="login-button">
@@ -133,7 +154,7 @@
             <a href="注册页" target="_blank" class="register-a-link" style="font-size:8px;color:black;text-decoration:none;">&nbsp&nbsp&nbsp免费注册</a></div>
         </div>
         <div id="login-blocks login-links1">
-            <a href="注册页" target="_blank" class="register-a-link" style="font-size:8px;color:black;text-decoration:none;">免费注册</a></div>
+            <a href="注册页" target="_blank" class="register-a-link" style="font-size:8px;color:black;text-decoration:none;display:none" >免费注册</a></div>
         </div>
     </div>
 </div>
