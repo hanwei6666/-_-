@@ -14,8 +14,7 @@ spring:
 
 
 
-thymeleaf:
-   prefix=classpath:/static/
+
 
 
 

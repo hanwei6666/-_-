@@ -11,9 +11,9 @@ public class LoginController {
 
     private LoginService loginService;
 
-    @RequestMapping("/login")
+    @RequestMapping("/")
         public String login(){
-        return "login.html";
+        return "index.html";
     }
 
 }
