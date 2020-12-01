@@ -13,62 +13,45 @@
         }
         #login-box{
             height:305px;
-            width:305px;
+            width:800px;
             margin:auto;
+
         }
         #login-box1{
             height:255px;
             width:255px;
-            border:1px solid #ccc;
             margin:25px;
+            text-align: left;
+            position: absolute
         }
         #login-box1-1{
             height:25px;
             width:255px;
-            border:1px solid #ccc;
-            text-align: left;
             margin-bottom: 20px;
             margin-top: 25px;
         }
         #login-box1-2{
             height:200px;
             width:255px;
-            border:1px solid #ccc;
             text-align: left;
             margin-top: 5px;
+            margin-left: 5px;
         }
         #login-input-name{
-            border: 1px solid #ccc;
             height: 39px;
             width: 210px;
-            font-size: 14px;
+            text-align:center;
 
 
         }
         #login-input-password{
-            border: 1px solid #ccc;
             height: 39px;
             width: 210px;
-            font-size: 14px;
             margin-top: 15px;
+            text-align:center;
 
         }
-        #login-input-phone{
-            border: 1px solid #ccc;
-            height: 39px;
-            width: 210px;
-            font-size: 14px;
 
-
-        }
-        #login-input-verification{
-            border: 1px solid #ccc;
-            height: 39px;
-            width: 210px;
-            font-size: 14px;
-            margin-top: 15px;
-
-        }
         #login-name-img{
             border: 1px solid #ccc;
             height: 37px;
@@ -85,58 +68,74 @@
 
             background-color: #ccc;
         }
-        #login-phone-img{
-            border: 1px solid #ccc;
-            height: 37px;
-            width: 37px;
-            float: left;
-            background-color: #ccc;
-        }
-        #login-verification-img{
-            border: 1px solid #ccc;
-            height: 37px;
-            width: 37px;
-            float: left;
+        #footer-container{
 
-            background-color: #ccc;
+            height:40px;
+            width:800px;
+            border-top:8px #f40 solid;
+            position:absolute;
+            margin-top: 250px;
+            left:23%
         }
+        li{
+        list-style:none;
+        }
+
     </style>
 </head>
 <body>
 <div id="login-top">
-<h1 style="margin-left: 300px;">会员登录</h1>
+<h1 style="margin-left: 500px;">会员登录</h1>
 </div>
 <div id="login-box">
+    <div style="text-align:left;position: absolute">
+        <img src="../img/login-index.jpg" style="height:325px;width:555px;margin-right:5px;">
+    </div>
     <div id="login-box1">
+
         <div id="login-box1-1">
-            <a href="javascript:void(0);" target="_self" id="password-login-tab-item" style="font-weight:bold;color:black;text-decoration:none;">密码登录</a>
+
         </div>
         <div id="login-box1-2">
             <div id="login-input-name">
                 <div id="login-name-img">
-                     <img src="src/main/resources/img/login-name.png" style="height:37px;width:37px;">
+                     <img src="../img/login-name.png" style="height:37px;width:37px;opacity:0.8;">
                 </div>
                 <div>
 
-                    <input name="fm-login-name" type="text" class="fm-text" id="fm-login-name" tabindex="1" style="height:33px;" aria-label="会员名/邮箱" placeholder="会员名/邮箱" autocapitalize="off" autofocus="autofocus">
+                    <input name="fm-login-name" type="text" class="fm-text" id="fm-login-name" tabindex="1" style="height:33px;opacity:0.8;" aria-label="会员名/邮箱/手机号" placeholder="会员名/邮箱/手机号" autocapitalize="off" autofocus="autofocus">
                 </div>
             </div>
 
             <div id="login-input-password">
                 <div id="login-password-img">
-                      <img src="../img/login-password.png" style="height:37px;width:37px;">
+                      <img src="../img/login-password.png" style="height:37px;width:37px;opacity:0.8;">
                 </div>
-                <input name="fm-login-name" type="text" class="fm-text" id="fm-login-password" tabindex="1" style="height:33px" aria-label="请输入登录密码" placeholder="请输入登录密码" autocapitalize="off" autofocus="autofocus">
+                <input name="fm-login-name" type="text" class="fm-text" id="fm-login-password" tabindex="1" style="height:33px;opacity:0.8;" aria-label="请输入登录密码" placeholder="请输入登录密码" autocapitalize="off" autofocus="autofocus">
             </div>
 
             <div id="login-button">
-                <button type="submit" tabindex="3" class="fm-button fm-submit password-login" style="width:255px;height:40px;margin-top: 15px;background-color: #f40;color:white">登录</button>
+                <button type="submit" tabindex="3" class="fm-button fm-submit password-login" style="width:200px;height:40px;margin-top: 15px;background-color: #f40;color:white">登录</button>
             </div>
-            <div id="login-blocks login-links">
+    </div>
+        <div id="login-blocks login-links">
             <a href="密码找回页" target="_blank" class="forgot-password-a-link" style="font-size:8px;color:black;text-decoration:none;">忘记密码</a>
             <a href="register.html" target="_blank" class="register-a-link" style="font-size:8px;color:black;text-decoration:none;">&nbsp&nbsp&nbsp免费注册</a></div>
-        </div>
     </div>
 </div>
+<div id="footer-container">
+
+    <ul style=" list-style:none;overflow:hidden;padding:0;margin:0;width:800px;">
+        <li style="float:left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+        <li style="float:left;"><a rel="nofollow" href="//rule.1688.com/policy/copyright.html" target="_self" title="著作权与商标声明" style="font-size:8px;color:black;text-decoration:none;">著作权与商标声明</a> |</li>
+        <li style="float:left;"><a rel="nofollow" href="//rule.1688.com/policy/legal.html" target="_self" title="法律声明" style="font-size:8px;color:black;text-decoration:none;">&nbsp法律声明</a> |</li>
+        <li style="float:left;"><a rel="nofollow" href="//rule.1688.com/policy/terms.htm" target="_self" title="服务条款" style="font-size:8px;color:black;text-decoration:none;">&nbsp服务条款</a> |</li>
+        <li style="float:left;"><a rel="nofollow" href="http://terms.alicdn.com/legal-agreement/terms/suit_bu1_b2b/suit_bu1_b2b201703271337_94551.html" target="_self" title="隐私政策" style="font-size:8px;color:black;text-decoration:none;">&nbsp隐私政策</a> |</li>
+        <li style="float:left;"><a rel="nofollow" href="//page.1688.com/shtml/about/ali_group1.shtml" target="_self" title="关于阿里巴巴" style="font-size:8px;color:black;text-decoration:none;">&nbsp关于批发商城</a> |</li>
+        <li style="float:left;"><a rel="nofollow" href="//114.1688.com/kf/contact.html?tracelog=kf_2012_budian_allcontact" target="_self" title="联系我们" style="font-size:8px;color:black;text-decoration:none;">&nbsp联系我们</a> |</li>
+        <li style="float:left;"><a href="//114.1688.com/sitemap.html" target="_self" title="网站导航" style="font-size:8px;color:black;text-decoration:none;">&nbsp网站导航</a></li>
+    </ul>
+</div>
+
 </body>
 </html>
